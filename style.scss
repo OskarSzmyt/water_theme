@@ -1,0 +1,354 @@
+/**
+ * Theme Name:        WATER THEME
+ * Description:       Custom training theme
+ * Version:           1.0.0
+ * Author:            Oskar Szmyt
+ * Author URI:        github.com/oskarszmyt
+ * Tags:              educational
+ */
+$bgcolor: #f6fafd;
+$sectioncolor: #3b9cd9;
+$iconcolor: #003d93;
+body {
+  font-family: 'Libre Caslon Display', serif !important;
+  font-weight: 400 !important;
+  background-color: $bgcolor !important;
+}
+header {
+  position: fixed;
+  top: 0;
+  background-color: $bgcolor;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  img {
+    margin-left: 3em;
+    float: left;
+  }
+  nav {
+    float: right;
+    margin-top: 19px;
+    margin-right: 3em;
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      &:hover {
+        text-decoration: none;
+      }
+      a {
+        margin: 0 0.5em;
+        font-size: 24px;
+        color: $iconcolor;
+        text-decoration: none;
+
+        &:hover {
+          color: $sectioncolor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.wrapper {
+  margin: 0 auto;
+  margin-top: 5em;
+  padding: 0;
+  text-align: center;
+  color: $iconcolor;
+  min-height: 80vh;
+  section {
+    color: $iconcolor;
+    width: 50%;
+    padding: 3em 1.5em;
+    //background-color: $sectioncolor;
+    //border-radius : 40px ;
+    margin: 0 auto;
+  }
+  .features {
+    div {
+      margin: 0.8em auto;
+      width: 100%;
+      .feature-icon {
+        font-size: 40px;
+        color: $iconcolor;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+      }
+      p {
+        display: inline;
+        font-size: 22px;
+        font-weight: 500;
+        //vertical-align:top;
+        height: 50px;
+      }
+    }
+  }
+
+  .how_it_works {
+    font-size: 20px;
+    iframe {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  hr {
+    color: $iconcolor;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .pricing {
+    div {
+      display: flex;
+      flex-direction: row;
+      .offer {
+        padding-top: 5%;
+        width: 200px;
+        height: 300px;
+        margin: 0 auto;
+        background: linear-gradient(
+          180deg,
+          rgb(59, 156, 217) 0%,
+          rgb(246, 250, 253) 100%
+        );
+        color: #f6fafd;
+        text-align: center;
+        border-radius: 40px;
+        div {
+          display: block;
+          margin: 5px auto;
+          h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 5 auto;
+          }
+          h2 {
+            font-size: 28px;
+            font-weight: 400;
+            margin: 5 auto;
+          }
+
+          .pricing-icon {
+            font-size: 60px;
+            //font-weight: 400;
+            //margin:5 auto;
+          }
+          div {
+            .offer-button {
+              &:hover {
+                a {
+                  color: $iconcolor;
+                  background-color: #f6fafd80;
+                }
+              }
+              a {
+                background-color: #003d9380;
+                color: $bgcolor;
+                width: 120px;
+                height: 40px;
+                border: none;
+                border-radius: 40px;
+                margin: 5 auto;
+                font-size: 14px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #contact_us {
+    text-align: center;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 24px;
+    }
+    form {
+      span {
+        display: block;
+        margin: 5px auto;
+        input[type='email'] {
+          display: block;
+          border-radius: 40px;
+          border: 1px solid $iconcolor;
+          width: 230px;
+          height: 40px;
+          margin: 5px auto;
+          text-align: center;
+          font-size: 20px;
+        }
+      }
+
+      input[type='submit'] {
+        background-color: #003d93;
+        color: $bgcolor;
+        width: 230px;
+        height: 40px;
+        border: none;
+        border-radius: 40px;
+        margin: 5px auto;
+        font-size: 20px;
+
+        &:hover {
+          background-color: $sectioncolor;
+        }
+      }
+    }
+  }
+}
+footer {
+  text-align: end;
+  font-size: 18px;
+  color: $iconcolor;
+}
+.offer-button {
+  background-color: #003d9380;
+  color: $bgcolor;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  margin: 5 auto;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #f6fafd80;
+    color: $iconcolor;
+  }
+}
+.tags {
+  span {
+    font-size: 14px;
+    color: $iconcolor;
+    margin-right: 8px;
+    a {
+      color: $iconcolor;
+      &:hover {
+        color: $sectioncolor;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.comments {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3em 1.5em;
+}
+.comment-form {
+  div {
+    form {
+      p {
+        textarea {
+          display: block;
+          border-radius: 40px;
+          border: 1px solid $iconcolor;
+          width: 230px;
+          height: 200px;
+          margin: 5px auto;
+          text-align: center;
+          font-size: 20px;
+        }
+        input[type='text'],
+        input[type='email'] {
+          display: block;
+          border-radius: 40px;
+          border: 1px solid $iconcolor;
+          width: 230px;
+          height: 40px;
+          margin: 5px auto;
+          text-align: center;
+          font-size: 20px;
+        }
+        input[type='submit'] {
+          background-color: #003d93;
+          color: $bgcolor;
+          width: 230px;
+          height: 40px;
+          border: none;
+          border-radius: 40px;
+          margin: 5px auto;
+          font-size: 20px;
+
+          &:hover {
+            background-color: $sectioncolor;
+          }
+        }
+      }
+    }
+  }
+}
+.com {
+  width: 50%;
+  margin: 0 auto;
+  div {
+    .commentmetadata {
+      display: none;
+    }
+    a,
+    cite,
+    span,
+    p {
+      font-size: 20px;
+    }
+    .vcard {
+      width: 50%;
+      float: left;
+    }
+    p {
+      margin-top: 11px;
+      min-height: 60px;
+      width: 50%;
+      float: left;
+      text-align: left;
+    }
+    .reply {
+      width: 100%;
+    }
+  }
+}
+.archive {
+  a {
+    color: $iconcolor;
+    &:hover {
+      color: $sectioncolor;
+      text-decoration: none;
+    }
+  }
+}
+.pagination {
+  justify-content: center;
+  a {
+    font-size: 20px;
+    color: $iconcolor;
+    &:hover {
+      color: $sectioncolor;
+      text-decoration: none;
+    }
+  }
+  span {
+    font-size: 20px;
+    color: $sectioncolor;
+    //text-decoration: underline;
+  }
+}
+@media only screen and (max-width: 1239px) {
+  #pricing {
+    display: flex;
+    flex-direction: column;
+    .offer {
+      margin: 10px auto;
+    }
+  }
+}
